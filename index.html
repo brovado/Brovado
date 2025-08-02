@@ -2,52 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to the Network</title>
+  <title>brovado — The Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 1rem 0;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .qr {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .secret-toggle {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    #hiddenContent {
+      display: none;
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border: 1px solid #30363d;
+      background-color: #161b22;
+      border-radius: 6px;
+    }
+    button {
+      background: #21262d;
+      color: #c9d1d9;
+      padding: 0.5rem 1rem;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #30363d;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #8b949e;
+    }
+  </style>
 </head>
 <body>
-  <main>
-    <h1>🧠 Babel Network</h1>
-    <p>One mind. Many machines. This is the index of my active constructs—places where my thoughts, systems, and signals are live.</p>
 
-    <section>
-      <h2>⚙️ Core Constructs</h2>
+  <h1>Welcome to Brovado's Index</h1>
+  <p>This is the root. From here, you branch.</p>
+
+  <ul>
+    <li>🧠 <a href="https://discord.gg/YOUR_INVITE" target="_blank">The Playcaller's Room</a></li>
+    <li>🌸 <a href="https://bellacassavitabella.com" target="_blank">bellacassavitabella.com</a></li>
+    <li>🔧 <a href="https://autopartsavenue.com" target="_blank">autopartsavenue.com</a></li>
+    <li>🛍️ <a href="https://www.amazon.ca/s?i=merchant-items&me=A276LISNKVGE2O" target="_blank">MDR Amazon Storefront</a></li>
+  </ul>
+
+  <div class="qr">
+    <p>Scan to return here anytime:</p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://brovado.github.io/Brovado/" alt="QR Code to this page">
+  </div>
+
+  <footer>
+    With clarity, we build.<br>— brovado
+  </footer>
+
+  <div class="secret-toggle">
+    <button onclick="toggleSecret()">Reveal Personal Layer</button>
+    <div id="hiddenContent">
+      <p>🪐 This is where the signal gets strange.</p>
       <ul>
-        <li><a href="/babel-machine/index.html">🗝️ Babel Machine</a> — a distillery of truths, memory, and inner frameworks</li>
-        <li><a href="/playcallers-room.html">📊 The Playcaller's Room</a> — a Discord-based fantasy analytics war room</li>
+        <li><a href="babel-machine/index.html">🗝️ Babel Machine</a> — distilled truths & memory ritual</li>
+        <li><a href="snippets/awareness.html">💡 Awareness is a Currency</a></li>
+        <li><a href="#">✍️ Journals (coming soon)</a></li>
+        <li><a href="#">📚 Current Study Stack</a></li>
       </ul>
-    </section>
+    </div>
+  </div>
 
-    <section>
-      <h2>🧩 Projects in Motion</h2>
-      <ul>
-        <li><a href="/auto-batch-system.html">📦 Auto-Batch System</a> — order grouping and shipping label automation</li>
-        <li><a href="/mdr-vehicle-search.html">🔍 Vehicle Part Filter</a> — dynamic part matching for e-commerce</li>
-      </ul>
-    </section>
+  <script>
+    function toggleSecret() {
+      const el = document.getElementById('hiddenContent');
+      el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+    }
+  </script>
 
-    <section>
-      <h2>🌱 Creative Threads</h2>
-      <ul>
-        <li><a href="/snippets/awareness.html">💡 Awareness is a Currency</a></li>
-        <li><a href="/snippets/flow.html">🌊 Flow as a Gate</a></li>
-        <!-- Future: poetry, short stories, etc. -->
-      </ul>
-    </section>
-
-    <section>
-      <h2>🔗 External Channels</h2>
-      <ul>
-        <li><a href="https://discord.gg/YOUR_INVITE" target="_blank">🧠 Join The Playcaller's Room (Discord)</a></li>
-        <li><a href="https://yourgithub.com/yourprofile" target="_blank">👨‍💻 GitHub</a></li>
-        <li><a href="https://yourdomain.com" target="_blank">🌐 Home Site</a></li>
-      </ul>
-    </section>
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://yourdomain.com/index.html" alt="QR Code to Babel Network">
-
-    <footer>
-      <p>Built from fragments. Bound by focus.</p>
-    </footer>
-  </main>
 </body>
 </html>
